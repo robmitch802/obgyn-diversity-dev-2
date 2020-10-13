@@ -16,7 +16,10 @@ class MyEditor extends React.Component {
     render() {
         return(
             <div className="container" >
-                <Editor editorState={this.state.editorState} onChange={this.onChange} />
+                <div className="border-dark">
+                    <Editor editorState={this.state.editorState} onChange={this.onChange} />
+                </div>
+                
             </div>
             
         )
